@@ -21,7 +21,7 @@ def prepare_data(data, receptive_field):
     train_data = np.reshape(train_data, (train_data.shape[0], train_data.shape[1], 1))
     return train_data, target_data
 
-
+# Builds the model based on Google's WaveNet model for the TTS
 def build_model(receptive_field):
     inputs = Input(shape=(receptive_field, 1))
     x = inputs
