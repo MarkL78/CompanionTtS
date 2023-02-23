@@ -1,7 +1,8 @@
 import torch
 import librosa
-from taco2.model import Taco2
-from taco2.utils import load_wav, text_to_sequenc
+# from tacotron2.utils import load_wav, text_to_sequenc
+from tacotron2_model import Tacotron2 as Taco2
+import tacotron2_model
 from waveglow.glow import WaveGlow
 
 # Load pre-trained models
