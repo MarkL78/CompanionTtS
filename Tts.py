@@ -1,5 +1,7 @@
 import torch
 import librosa
+
+# The TacoTron libraries might be incorrect, need to find which ones are the most up-to date ones
 # from tacotron2.utils import load_wav, text_to_sequenc
 from tacotron2_model import Tacotron2 as Taco2
 import tacotron2_model
