@@ -8,6 +8,7 @@ from keras.layers import Dense, Multiply, Lambda, Reshape
 filename = 'audio.wav'
 x, sr = librosa.load(filename, sr=16000)
 
+
 # Function that will prepare the data that the model will be trained on
 def prepare_data(data, receptive_field):
     # zero padding
@@ -20,6 +21,7 @@ def prepare_data(data, receptive_field):
         target_data[i] = data[i+receptive_field]
     train_data = np.reshape(train_data, (train_data.shape[0], train_data.shape[1], 1))
     return train_data, target_data
+
 
 # Builds the model based on Google's WaveNet model for the TTS
 def build_model(receptive_field):
