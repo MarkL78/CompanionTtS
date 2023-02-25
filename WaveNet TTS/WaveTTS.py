@@ -5,7 +5,8 @@ from keras.layers import Input, Conv1D, Activation, Dropout, Add
 from keras.layers import Dense, Multiply, Lambda, Reshape
 
 # Audio File used to test the quality of the voice
-filename = 'audio.wav'
+# Need to confirm if this needs to be a .WAV file or if it can be something else
+filename = '3853-163249-0000.flac'
 x, sr = librosa.load(filename, sr=16000)
 
 
